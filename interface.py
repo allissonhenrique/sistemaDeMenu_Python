@@ -3,17 +3,17 @@ def leiaInt(msg):
         try:
             n = int(input(msg))
         except (ValueError, TypeError):
-            print('ERRO: por favor, digite um número inteiro válido.')
+            print(": por favor, digite um número inteiro válido.")
             continue
         except(KeyboardInterrupt):
-            print('\nUsuário preferiu não digitar esse número.')
+            print('\nO usuário prefiriu não digitar esse número.')
             return 0
         else:
             return n
 
 
 def linha(tam=42):
-    return '-'* tam
+    return '-' * tam
 
 
 def cabeçalho(txt):
@@ -29,5 +29,5 @@ def menu(lista):
         print(f'{c} - {item}')
         c += 1
     print(linha())
-    opc = leiaInt('Sua Opção: ')
+    opc = leiaInt('Sua Opcão: ')
     return opc
